@@ -47,101 +47,186 @@
 			}
 
 			/* Universal styles for links and stuff */
-		
+			a.button{
+				background:#04AA6D;
+				color:#000000;
+				box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+				padding:15px 32px;
+				text-decoration:none;
+				display:inline-block;
+			}
 
+			a.button:hover{
+				color: #ffffff;
+				animation: pulse 1s infinite alternate;
+			}
+			
 			/* Responsive styles */
+			@media screen and (max-width: 600px) {
+				.mobile{width: 100% !important;}
+				.block{display: block !important; width: 100% !important;}
+			}
 	
+			@keyframes pulse {
+				0% {
+					transform: scale(1);
+					background-color: #04AA6D;
+				}
+				50% {
+					transform: scale(1.1);
+					background-color: #00b950;
+				}
+				100% {
+					transform: scale(1);
+					background-color: #04AA6D;
+				}
+			}
+
 		</style>
 	</head>
-	<body id="body" style="margin: 0 !important; padding: 0 !important; background-image: url('images/Coins.jpg'); background-repeat: no-repeat; background-size: cover;">
-		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<body id="body" style="margin: 0 !important; padding: 0 !important;">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
 			<tr>
-				<td>
-		<!-------------------------------------- Column 1 ------------------------------------->
-					<table align="left" border="0" cellpadding="0" cellspacing="0" width="33%">
+				<td style="background-image: url('images/Coins.jpg'); 
+							background-repeat: no-repeat; 
+							background-size: cover; 
+							background-position: center; 
+							background-attachment: fixed;">
+
+					<table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+
+						
+
+						<!-- Main headline -->
 						<tr>
-							<!-- Logo image -->
-							<div style="display: flex; justify-content: center;align-items: center;">
-								<img src="images/Pointing.png" alt="Man pointing at self" style="display: block; max-width: 100%; min-width: 100px; width:200px; max-height: 100%: min-height: 100px; height:302px;">
-							</div>
+						<td align="center">
+							<h1>HERE'S HOW TO MAKE FREE MONEY</h1>
+						</td>
 						</tr>
+
+						<!-- Hero image -->
 						<tr>
-							<!-- Mini Headline -->
-							<div style="display: flex; justify-content: center;align-items: center;">
-								<p>ARE YOU BROKE?</p>
-							</div>
+						<td align="center">
+							<img src="images/Rich.jpg" 
+								width="530" 
+								style="display:block;" 
+								alt="Man holding money">
+						</td>
 						</tr>
-						<tr>
-							<!-- Main Headline -->
-							<div style="display: flex; justify-content: center;align-items: center;">
-								<h1>HERE'S HOW TO MAKE FREE MONEY</h1>
-							</div>
-						</tr>
-						<tr>
-							<!-- Hero Image -->
-							<div style="display: flex; justify-content: center;align-items: center;">
-								<br><img src="images/Rich.jpg" alt="Man holding money" style="width:530px;height:300px;">
-							</div>
-						</tr>
-						<tr>
-							<!-- Body copy -->
-							<div style="display: flex; justify-content: center;align-items: center; margin-left:470px; margin-right: 470px;">
-								<p>
-									Tired of working? Keep reading to find out how <b>YOU</b> can become rich at the press of a button! If you just trust me and <i>click the button below</i>, then you can become
-									rich beyond your wildest dreams! I didn't believe it at first either but it truly works, just <b>CLICK</b> it already!
-								</p>
-							</div>
-						</tr>
-						<tr>
-							<!-- Button -->
-							<div style="display: flex; justify-content: center;align-items: center;">
-								<button 
-									style="background-color: #04AA6D;
-									border: none;
-									color: white;
-									padding: 15px 32px;
-									text-align: center;
-									text-decoration: none;
-									display: inline-block;
-									font-size: 16px;
-									margin: 4px 2px;
-									cursor: pointer;">CLICK HERE!!!!
-								</button>
-							</div>
-						</tr>
-						<tr>
-							<!-- Footer information: Always include an unsubscribe link! -->
-							<div style="display: flex; justify-content: center;align-items: center;">
-								<Footer>
-									DONT CLICK THIS <button>Unsubscribe</button>
-									<p><small>Absolutely, totally not a scam. Trust me.</small></p>
-								</Footer>
-							</div>				
-						</tr>
-					</table>
-		<!-------------------------------------- Column 2 ------------------------------------->
-					<table align="right" border="0" cellpadding="0" cellspacing="0" width="33%">
-						<p>
-							Testing testing testing testing testing testing testing testing testing testing testing testing testing
-							 testing testing testing testing testing testing testing testing testing testing testing testing
-							 testing testing testing testing testing testing testing testing testing testing testing testing
-							 testing testing testing testing testing testing testing testing testing testing testing testing
-							 testing testing testing testing testing testing testing testing testing testing testing testing
-						</p>
 					</table>
 
-		<!-------------------------------------- Column 3 ------------------------------------->
-					<table align="right" border="0" cellpadding="0" cellspacing="0" width="33%">
-						<p>
-							Testing testing testing testing testing testing testing testing testing testing testing testing testing
-							 testing testing testing testing testing testing testing testing testing testing testing testing
-							 testing testing testing testing testing testing testing testing testing testing testing testing
-							 testing testing testing testing testing testing testing testing testing testing testing testing
-							 testing testing testing testing testing testing testing testing testing testing testing testing
-						</p>
+					<br>
+					<table class="mobile" align="center" border="0" cellpadding="0" cellspacing="0" width="900px">
+						<tr>
+							<td style="background-color: rgba(224, 224, 224, 0.7); border-radius: 10px;">
+					<!-------------------------------------- Column 1 ------------------------------------->
+								<table class="block" align="left" width="33%" cellpadding="0" cellspacing="0" border="0">
+									
+									<!-- Checkboxes -->
+									<tr>
+										<td style="line-height: 2.2; padding-left: 5px; padding-bottom: 5px;">
+											<p>
+												<b>Please Finish This Form for $$$</b>
+											</p>
+
+											<div>
+												<label for="phone">I want to be notified by phone!</label>
+												<input type="checkbox" name="phone" id="phone" checked/>
+											</div>
+
+											<div>
+												<label for="address">I want to be notified by email!</label>
+												<input type="checkbox" name="address" id="address" checked/>
+											</div>
+
+											<div>
+												<label for="credit">I want to give out my credit card info!</label>
+												<input type="checkbox" name="credit" id="credit" checked/>
+											</div>
+
+											<fieldset>
+												<legend>Select a cash amount:</legend>
+
+												<div>
+													<input type="radio" id="Hundred" name="drone" value="Hundred" checked />
+													<label for="Hundred">$100</label>
+												</div>
+
+												<div>
+													<input type="radio" id="Thousand" name="drone" value="Thousand" />
+													<label for="Thousand">$1000</label>
+												</div>
+
+												<div>
+													<input type="radio" id="Million" name="drone" value="Million" />
+													<label for="Million">$1,000,000</label>
+												</div>
+											</fieldset>
+										</td>
+									</tr>
+								</table>
+					<!-------------------------------------- Column 2 ------------------------------------->
+								<table class="block" align="right" border="0" cellpadding="0" cellspacing="0" width="33%">
+									<tr>
+										<td>
+											<!-- Image -->
+											<tr>
+												<td align="center">
+													<img src="images/Pointing.png" 
+														width="200" 
+														style="display:block;" 
+														alt="Man pointing at self">
+												</td>
+											</tr>
+
+											<!-- Mini headline -->
+											<tr>
+												<td align="center">
+													<p>
+														ARE YOU BROKE?
+													</p>
+												</td>
+											</tr>
+										</td>
+									</tr>
+								</table>
+
+					<!-------------------------------------- Column 3 ------------------------------------->
+								<table class="block" align="right" border="0" cellpadding="0" cellspacing="0" width="33%">
+									<tr>
+										<td>
+											<p style="line-height: 1.5; margin-left: 15px; margin-right: 15px;">
+												Tired of working? Well have we got good news for you! Keep reading to find out how <b>YOU</b> can become 
+												rich at the press of a button! If you just trust me and <i>click&nbsp;the&nbsp;button&nbsp;below</i>, then you can become 
+												rich beyond your wildest dreams! After giving us permission to access some of your info and selecting your desired amount of money on the left, clicking the button 
+												will automatically add the funds to your bank account! I didn't believe it at first either but it truly works, just <b>CLICK</b> it already!
+											</p>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+					<!-- Footer -->
+					<table align="center" border="0" cellpadding="0" cellspacing="0">
+						<!-- Button -->
+						<tr>
+							<td align="center" style="padding-top:30px;">
+								<a href="#" class="button">
+									<b>CLICK HERE!!!!</b>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td align="center">
+								<p><small>DONT CLICK THIS <a href="#">Unsubscribe</a>
+								<br>Absolutely, totally not a scam. Trust me.</small></p>
+							</td>
+						</tr>
 					</table>
 				</td>
-			</tr>
+			</tr>	
 		</table>
 	</body>
 </html>
