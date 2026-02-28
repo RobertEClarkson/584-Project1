@@ -56,11 +56,20 @@
 				display:inline-block;
 			}
 
+			a.unsub{
+				display: inline-block;
+				position: relative; 
+			}
+
 			a.button:hover{
 				color: #ffffff;
 				animation: pulse 1s infinite alternate;
 			}
-			
+
+			a.unsub:hover{
+				animation: escape 3s infinite alternate ease-in-out;
+			}
+
 			/* Responsive styles */
 			@media screen and (max-width: 600px) {
 				.mobile{width: 100% !important;}
@@ -80,6 +89,15 @@
 					transform: scale(1);
 					background-color: #04AA6D;
 				}
+			}
+
+			@keyframes escape {
+				0% { transform: translate(0, 0); }
+				20% { transform: translate(-100px, -10px); }
+				40% { transform: translate(15px, 5px); }
+				60% { transform: translate(-10px, 15px); }
+				80% { transform: translate(100px, -15px); }
+				100% { transform: translate(0, 0); }
 			}
 
 		</style>
@@ -144,6 +162,7 @@
 												<input type="checkbox" name="credit" id="credit" checked/>
 											</div>
 
+									<!--Radio buttons-->
 											<fieldset>
 												<legend>Select a cash amount:</legend>
 
@@ -212,16 +231,16 @@
 					<table align="center" border="0" cellpadding="0" cellspacing="0">
 						<!-- Button -->
 						<tr>
-							<td align="center" style="padding-top:30px;">
+							<td align="center" style="padding-top:30px; padding-bottom: 20px;">
 								<a href="#" class="button">
 									<b>CLICK HERE!!!!</b>
 								</a>
 							</td>
 						</tr>
 						<tr>
-							<td align="center">
-								<p><small>DONT CLICK THIS <a href="#">Unsubscribe</a>
-								<br>Absolutely, totally not a scam. Trust me.</small></p>
+							<td align="center" style="line-height: 0.7;">
+								<p><small>DONT CLICK THIS</small></p><a href="#" class="unsub">Unsubscribe</a>
+								<br><p><small>Absolutely, totally not a scam. Trust me.</small></p>
 							</td>
 						</tr>
 					</table>
